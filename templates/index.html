@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'styles/landing.css' %}">    
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">    
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<title>SWAP-MART</title>
+</head>
+<body>
+   
+  {% include 'navbar.html' %}
+      {% comment %} <div class="navigation w3-highway-blue"> {% endcomment %}
+        {% comment %} <nav class="nav-container w3-padding-large">
+          <div class="logo">
+            <a href="#home"> SWAP-<span>MART</span></a>
+          </div>
+          <div class="mobile-button">
+            <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+          </div>
+
+          
+
+          <div class="links">
+             
+              <a href="/exchange" class="right">Exchange</a>
+           
+
+          </div>
+          <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
+          <div class="mobile-logo" style="display: inline;">
+            <a href="#home" class="logo">SWAP-<span>MART</span></a>
+            <span style="width: 100%;"></span>
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+          </div>
+         
+            <a href="./explore.html" onclick="toggleMobileNavigation()">Exchange</a>
+           
+          </div>
+        </nav>    {% endcomment %}
+      {% comment %} </div> {% endcomment %}
+
+      <div class="hero" id="home">
+        <div class="text container">
+          <p class="pre-title">"Give your book countless lives"</p>
+          <h1 class="title"> SWAP-<span>MART</span></h1>
+          <p class="post-title">Connect with the rest of the world!</p>
+        </div>
+      </div>
+      
+      <!-- services section starts  -->
+
+<section class="services" id="services">
+
+  <h1 class="heading">
+      <span>Why To Exchange Books?</span>
+  </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+        <i class="fa-solid fa-book-open" style="color: #71c6dd;"></i>
+          <h3>Simple</h3>
+          <p>Give 1 Take 1 Read it,<br> Exchange at Your Doorsteps.</p>
+      </div>
+      <div class="box">
+        {% comment %} <i class="fa-duotone fa-books"></i> {% endcomment %}
+        <i class="fa-solid fa-piggy-bank" style="color: #71c6dd;"></i>
+          <h3>Save</h3>
+          <p>Socialise Cost. Saves Spaces, <br>Keep reading newer titles just for the cost of shipping.</p>
+      </div>
+      <div class="box">
+          {% comment %} <i class="#pic"></i> {% endcomment %}
+          {% comment %} <i class="fa-duotone fa-users" style="color: #71c6dd;"></i> {% endcomment %}
+          <i class="fa-solid fa-users" style="color: #71c6dd;"></i>
+          <h3>Social</h3>
+          <p>Connect readers to Books lying idle in every home.</p>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-list-check"  style="color: #71c6dd;"></i>
+          <h3>Convenient</h3>
+          <p>User friendly and accessible way of<br> saving time and money both.</p>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-scale-unbalanced"  style="color: #71c6dd;"></i>
+          <h3>Less for more</h3>
+          <p>Wider variety of books,  Being eco-friendly,<br> getting more social interaction, and freeing up space</p>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-recycle"  style="color: #71c6dd;"></i>
+          <h3>Less Paper...more trees</h3>
+          <p>Reusing Books, Reducing Waste, <br>Sharing knowledge, and encouraging others to do the same</p>
+      </div>
+
+  </div>
+
+</section>
+
+
+
+      
+    <div class="about  w3-padding-large" id="about">
+      <div class="text-one">
+        <h2>About Us</h2>
+        <p>It's the World's Library. It's a smart social networking site. It's a celebration of literature and a place where books get new life. SwapMart is the act of giving a book a unique identity so, as the book is passed from reader to reader, it can be tracked and thus connecting its readers. Our community is changing the world and touching lives one book at a time.</p>
+     
+       </div>
+        <div class="text-one">
+           <h2>Our Vision</h2>
+                <p>The vision for the book exchange website is to create a vibrant and inclusive community of readers who are passionate about books and eager to share their knowledge and insights with others. By providing a platform for book lovers to connect, share, and discover new titles, the website could help promote reading and literacy and foster a love of literature that extends beyond the virtual world.</p>
+                     </div>
+     
+  </div>
+
+
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>SWAP-MART</h3>
+          <p>Books are meant to be shared,
+            Join the book exchange community"<br>
+            "Read, share, repeat"</p>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+      </div>
+
+  </div>
+
+
+      <script>
+        function toggleMobileNavigation() {
+          const mobileNavigation = document.getElementById("mobile-sidenav");
+          mobileNavigation.classList.toggle('mobile-links-active');
+        }
+ </script>
+    <script src="https://kit.fontawesome.com/1ef74461f1.js" crossorigin="anonymous"></script>
+</body>
+</html>
